@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">    
+    <link href="font-awesome/css/fontawesome.css" rel="stylesheet">
+    <link href="font-awesome/css/regular.css" rel="stylesheet">
+    <link href="font-awesome/css/solid.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+<body>
+    <div id="box">
+        <h1>Library</h1>
+
+        <button id="btnNew">New book</button>
+
+        <div id="boxNewOut">
+            <div id="boxNew">
+                <div id="boxNewTop">
+                    <button id="btnClose">&#10006;</button>
+                </div>
+
+                <form action="#" method="post" onsubmit="return false" novalidate>
+                    <div>
+                        <label for="booktitle">Title*</label>
+                        <input type="text" id="booktitle" name="booktitle">
+                        <span class="error-title" aria-live="polite"></span>
+                    </div>
+
+                    <div>
+                        <label for="bookauthor">Author*</label>
+                        <input type="text" id="bookauthor" name="bookauthor">
+                        <span class="error-author" aria-live="polite"></span>
+                    </div>
+
+                    <div>
+                        <label for="bookpages">Pages*</label>
+                        <input type="text" id="bookpages" name="bookpages">
+                        <span class="error-pages" aria-live="polite"></span>
+                    </div>
+
+                    <div>
+                        <p class="label">Have you read it?</p>
+                        <label for="yes" class="radio">Yes</label>
+                        <input type="radio" id="yes" name="bookread" value="Read" checked>
+                        <label for="no" class="radio">No</label>
+                        <input type="radio" id="no" name="bookread" value="Unread">
+                    </div>
+                    
+                    <button id="btnSave">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="boxShow"></div>
+    </div>
+</body>
+</html>
